@@ -16,6 +16,8 @@
 }
 body{
   background: rgb(233, 233, 233);
+  padding: 0%;
+  margin: 0%;
 }
 nav{
   width: 280px;
@@ -91,12 +93,62 @@ i{
     display: flex;
     flex-direction: row;
 }
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+.footer {
+  padding: 10px;
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.column{
+  float: right;
+  padding: 5px;
+  width: 50px;
+}
+.row::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+.card4{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: left;
+    background-color: #02062dcc;
+    border-radius: 20px;
+}
   </style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 </head>
 <body>
-  <div class="container">
-    <nav>
+  <footer class="footer">
+    <h4>About us&emsp;Contact us&emsp;Terms & Conditions</h4>
+  </footer>
+  <div class="row">
+    <div class="column">
+      <img src="C:\Users\raju\Downloads\circle-user-solid.svg">
+    </div>
+    <div class="column">
+      <img src="C:\Users\raju\Downloads\circle-question-solid.svg">
+    </div>
+    <div class="column">
+      <img src="C:\Users\raju\Downloads\bell-solid.svg">
+    </div>
+    <div class="column">
+      <div class="card4">
+        <i class="fas fa-university"></i>
+        <h4>xxxx047</h4>
+      </div>
+    </div>
+  </div>  
+  <nav>
       <div class="navbar">
         <div class="logo">
           <img src="C:\Users\raju\Downloads\arrow-trend-up-solid.svg">
@@ -155,6 +207,5 @@ i{
         </div>
       </div>
     </nav>
-  </div>
 </body>
 </html>
